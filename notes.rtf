@@ -24,3 +24,36 @@ CSS Selectors
 Colorhunt.co is a cool tool for color palettes on a website
 Use rem for font size because font size reltaionships get less confusing
 fonts.google.com is a great place to download fonts. Lecture 6.1 has instructions
+
+CSS Box Model 
+- border property can take border thickness, style, color
+- padding pushes border out from the inside, but the box is still the same
+- margin is outside the border
+
+The Cascade
+- Position (least important)
+    - the lower the rule, the more important it is
+- Specificity
+    EXAMPLE <li id="first-id" class="first-class" draggable>
+    - element (least specific)
+    - class
+    - attribute
+    - id (most specific)
+- Type
+    - Style Sheet
+    - Internal Styles
+    - Inline Styles
+- Importance (most important)
+    - color: red;
+    - color: green !important;
+
+Combining CSS Selectors
+- you can combine these 4 kinds of selectors
+- <, > is a group selector
+    - applies to both Selectors
+- <selector > selector> is a child selector
+    - apply to the child on the left side
+- <selector selector> is a descendant selector
+    - applies to a descendant of left side
+- <selectorselector> is a chain selector
+    - apply to where all selectors are true
